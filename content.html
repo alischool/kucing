@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Cat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-brand {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            color: #ff6b81;
+        }
+        .nav-link {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #0984e3;
+        }
+        .nav-link.active {
+            font-weight: bold;
+        }
+        .btn-outline-success {
+            color: #ff6b81;
+            background-color: #fff;
+            border-color: #ff6b81;
+        }
+        .btn-outline-success:hover {
+            color: #fff;
+            background-color: #ff6b81;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            color: #636e72;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="utama.html">
+                <img src="logokawaii1.png" alt="Logo Kawaii Cat" style="width: 25px; height: auto; margin-right: -3px;">
+                Kawaii Cat
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-center mt-3">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="boostrap.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="content.html">Content</a>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas">Contacts</button>
+        </li>
+    </ul>
+
+    <div class="content mt-4">
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Gallery Kawaii Cat!</h1>
+                <p class="lead">Temukan segala informasi menarik tentang kucing di sini.</p>
+                <hr class="my-4">
+                <p>Banyak gambar kucing lucu dan menggemaskan! Penasaran? Lihat di bawah ini.</p>
+
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="kawai1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kucing Lucu</h5>
+                                <p class="card-text">Kenali kucing-kucing yang paling populer di dunia.</p>
+                                <a href="artikel.html" class="btn btn-primary">Baca Artikel</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="kawai2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kucing Gemas</h5>
+                                <p class="card-text">Nikmati foto-foto kucing yang menggemaskan.</p>
+                                <a href="gallery.html" class="btn btn-primary">Lihat Lebih Banyak</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="kawai3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Info Kucing</h5>
+                                <p class="card-text">Dapatkan informasi terbaru seputar perawatan kucing.</p>
+                                <a href="infokucing.html" class="btn btn-primary">Baca Artikel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 Kawaii Cat</p>
+            <p class="mb-0">Follow us: 
+                <a href="#"><i class="fab fa-facebook-square mx-1"></i></a>
+                <a href="#"><i class="fab fa-instagram-square mx-1"></i></a>
+                <a href="#"><i class="fab fa-twitter-square mx-1"></i></a>
+            </p>
+        </div>          
+    </footer>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="contactOffcanvas" aria-labelledby="contactOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="contactOffcanvasLabel">Contact Information</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Halo! Aku di sini untuk berbagi informasi tentang kucing untuk Kamu.
+            <p>Web bermasalah? atau Kamu ingin request? Jangan ragu untuk menghubungi aku melalui WhatsApp:</p>
+            <p><a href="https://wa.me/082327204784">082327204784</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

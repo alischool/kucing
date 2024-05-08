@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Cat</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar-brand {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            color: #ff6b81;
+        }
+        .nav-link {
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            color: #0984e3;
+        }
+        .nav-link.active {
+            font-weight: bold;
+        }
+        .btn-outline-success {
+            color: #ff6b81;
+            background-color: #fff;
+            border-color: #ff6b81;
+        }
+        .btn-outline-success:hover {
+            color: #fff;
+            background-color: #ff6b81;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            color: #636e72;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="utama.html">
+                <img src="logokawaii1.png" alt="Logo Kawaii Cat" style="width: 25px; height: auto; margin-right: -3px;">
+                Kawaii Cat
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-center mt-3">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="boostrap.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="content.html">Content</a>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#contactOffcanvas">Contacts</button>
+        </li>
+    </ul>
+
+    <div class="content mt-4">
+        <div class="container">
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="max-width: 700px; margin: 0 auto;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="wal1.jpg" class="d-block w-100" alt="Gambar 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="wal2.jpg" class="d-block w-100" alt="Gambar 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="wal3.jpg" class="d-block w-100" alt="Gambar 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="jumbotron text-center mt-4">
+                <img src="logokawaii.png" alt="Kucing" style="width: 100px; height: auto;">
+                <h1 class="display-4">Selamat Datang di Kawaii Cat!</h1>
+                <p class="lead">Temukan segala informasi menarik tentang kucing di sini.</p>
+                <hr class="my-4">
+                <p>Apakah Kamu pecinta kucing? Jika iya, mari kita jelajahi dunia kucing bersama.</p>
+                <a class="btn btn-primary btn-lg" href="content.html" role="button">Lihat Galeri</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 Kawaii Cat</p>
+            <p class="mb-0">Follow us: 
+                <a href="#"><i class="fab fa-facebook-square mx-1"></i></a>
+                <a href="#"><i class="fab fa-instagram-square mx-1"></i></a>
+                <a href="#"><i class="fab fa-twitter-square mx-1"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="contactOffcanvas" aria-labelledby="contactOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="contactOffcanvasLabel">Contact Information</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Halo! Aku di sini untuk berbagi informasi tentang kucing untuk Kamu.
+            <p>Web bermasalah? atau Kamu ingin request? Jangan ragu untuk menghubungi aku melalui WhatsApp:</p>
+            <p><a href="https://wa.me/082327204784">082327204784</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Cat Gallery</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            color: #ff6b81;
+        }
+        .nav-link {
+            font-size: 18px;
+            color: #0984e3;
+            transition: background-color 0.3s ease;
+        }
+        .nav-link.active {
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .photo {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .photo img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .photo img:hover {
+            transform: scale(1.02);
+        }
+        .photo h3 {
+            color: #0984e3;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            color: #636e72;
+        }
+        .btn-outline-primary:hover {
+            background-color: #0984e3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="utama.html">
+                <img src="logokawaii1.png" alt="Logo Kawaii Cat" style="width: 25px; height: auto; margin-right: -3px;">
+                Kawaii Cat
+            </a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-center mt-3">
+        <li class="nav-item">
+            <a class="nav-link" href="boostrap.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="content.html">Content</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="gallery.html">Gallery</a>
+        </li>
+    </ul>
+
+    <div class="content mt-4">
+        <div class="container">
+            <h1 style="color: #ff6b81; text-align: center;">Kawaii Cat Gallery</h1>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai1.jpg" data-caption="Cute Cat 1">
+                            <img src="kawai1.jpg" alt="Cute Cat 1">
+                        </a>
+                        <h3>Cute Cat 1</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai2.jpeg" data-caption="Cute Cat 2">
+                            <img src="kawai2.jpeg" alt="Cute Cat 2">
+                        </a>
+                        <h3>Cute Cat 2</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai3.jpg" data-caption="Cute Cat 3">
+                            <img src="kawai3.jpg" alt="Cute Cat 3">
+                        </a>
+                        <h3>Cute Cat 3</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai4.jpg" data-caption="Cute Cat 4">
+                            <img src="kawai4.jpg" alt="Cute Cat 4">
+                        </a>
+                        <h3>Cute Cat 4</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai5.jpg" data-caption="Cute Cat 5">
+                            <img src="kawai5.jpg" alt="Cute Cat 5">
+                        </a>
+                        <h3>Cute Cat 5</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai6.jpg" data-caption="Cute Cat 6">
+                            <img src="kawai6.jpg" alt="Cute Cat 6">
+                        </a>
+                        <h3>Cute Cat 6</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai7.jpg" data-caption="Cute Cat 7">
+                            <img src="kawai7.jpg" alt="Cute Cat 7">
+                        </a>
+                        <h3>Cute Cat 7</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai8.jpg" data-caption="Cute Cat 8">
+                            <img src="kawai8.jpg" alt="Cute Cat 8">
+                        </a>
+                        <h3>Cute Cat 8</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai9.jpg" data-caption="Cute Cat 9">
+                            <img src="kawai9.jpg" alt="Cute Cat 9">
+                        </a>
+                        <h3>Cute Cat 9</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai10.jpeg" data-caption="Cute Cat 10">
+                            <img src="kawai10.jpeg" alt="Cute Cat 10">
+                        </a>
+                        <h3>Cute Cat 10</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai11.jpeg" data-caption="Cute Cat 11">
+                            <img src="kawai11.jpeg" alt="Cute Cat 11">
+                        </a>
+                        <h3>Cute Cat 11</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="photo">
+                        <a href="kawai12.JPG" data-caption="Cute Cat 12">
+                            <img src="kawai12.JPG" alt="Cute Cat 12">
+                        </a>
+                        <h3>Cute Cat 12</h3>
+                    </div>
+                </div>
+            </div>
+            <a href="content.html" class="btn btn-outline-primary mt-3 d-block mx-auto" style="max-width: 200px;">Kembali</a>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 Kawaii Cat</p>
+            <p class="mb-0">Follow us: 
+                <a href="#"><i class="fab fa-facebook-square mx-1"></i></a>
+                <a href="#"><i class="fab fa-instagram-square mx-1"></i></a>
+                <a href="#"><i class="fab fa-twitter-square mx-1"></i></a>
+            </p>
+        </div>
+    </footer>    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.0/baguetteBox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <script>
+        baguetteBox.run('.photo', {
+            captions: function(element) {
+                return element.getElementsByTagName('img')[0].alt;
+            }
+        });
+    </script>
+</body>
+</html>
